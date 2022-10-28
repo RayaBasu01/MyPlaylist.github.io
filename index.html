@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon2.png" type="image/png">
+    <title>MyPlaylist</title>
+</head>
+<body>
+
+    <div class="main-div">
+        <div class="music-div">
+            <h1 id="title">বায়নাবিলাসী</h1>
+            <h3 id="singer">Sahana Bajpaie & Samantak</h3>
+            <div class="img-div">
+                <img src="album/track-1.jpg" alt="Baynabilashi">
+            </div>
+            <audio src="music/track-1.mp3" ></audio>
+
+            <!-- progressbar -->
+
+            <div class="progressBar-div" id="progressBar">
+                <div class="progress-duration">
+                    <div id="cur_time">00:00</div>
+                    <div id="duration">04:12</div>
+                </div>
+                <div class="progress-div" id="progress-div">
+                    <div class="progress" id="progress">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- controls -->
+
+            <div class="music-controls">
+                <i class="fas fa-solid fa-shuffle" id="random" title="Play Random"></i>
+                <i class="fas fa-solid fa-backward" id="prev" title="Previous" ></i>
+                <i class="fas fa-solid fa-play play-pause" id="play" title="Play"></i>
+                <i class="fas fa-solid fa-forward" id="next" title="Next"></i>
+                <i class="fas fa-solid fa-rotate-right" id="rpt" title="repeat"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
